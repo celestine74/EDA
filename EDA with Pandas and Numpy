@@ -1,1 +1,8 @@
 
+import pandas as pd
+import numpy as np
+
+nba = pd.read_csv('nba.csv')
+pd.set_option('display.max_rows', 10)
+nba.loc[[455, 362, 154, 28, 97]][['Team', 'College']]
+q = nc.drop(columns = 'College')  # inplace = False
